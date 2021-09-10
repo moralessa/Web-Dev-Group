@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cacedf9b8e.js" crossorigin="anonymous"></script>
+    <title>WEB 2890 Learning Bootstrap and Sass</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="logo image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <button type="button" class="rounded-pill btn-round">+1 728365413
+                <span> <i class="fas fa-phone"></i></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home" class="intro-section">
+        <div class="container">
+          <div class="row align-items-center text-white">
+            <div class="col-md-6">
+              <h1 class="display-3">
+                Welcome to the WebDev Group
+              </h1>
+              <h4>
+                We are a team of designers and developers ready to handle all of your web development needs. We deliver digital products
+                with superior user experiences that are guaranteed to result in customer conversions and more revenue for your business.
+              </h4>
+              <button type="button" class="rounded-pill btn-round mt-4">Get in touch
+                <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+            <div class="col-md-6 text-end">
+              <div class="video-box">
+                <img src="images/coding.png" alt="coding illustration" class="img-fluid">
+                <a href="#">
+                  <span><i class="fas fa-play-circle"></i></span>
+                  <span class="border-animation border-animation--border-1"></span>
+                  <span class="border-animation border-animation--border-2"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L34.3,165.3C68.6,171,137,181,206,170.7C274.3,160,343,128,411,117.3C480,107,549,117,617,138.7C685.7,160,754,192,823,176C891.4,160,960,96,1029,80C1097.1,64,1166,96,1234,106.7C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+      </section>
+
+
+      <section id="companies" class="companies pb-5">
+        <div class="container">
+          <div class="row text-center">
+            <h3 class="mb-4">
+              Trusted by companies like 
+            </h3>
+            <div class="heading-line mb-5"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-2">
+              <div class="logo-box shadow-sm">
+                <img src="images/companies/microsoft_logo.png" alt="microsoft_logo" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="logo-box shadow-sm">
+                <img src="images/companies/google_logo.png" alt="microsoft_logo" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="logo-box shadow-sm">
+                <img src="images/companies/walmart_logo.png" alt="microsoft_logo" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="logo-box shadow-sm">
+                <img src="images/companies/airbnb_logo.png" alt="microsoft_logo" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="logo-box shadow-sm">
+                <img src="images/companies/amazon_logo.png" alt="microsoft_logo" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="logo-box shadow-sm">
+                <img src="images/companies/cnn_logo.png" alt="microsoft_logo" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="container">
+          <div class="row">
+            <h2 class="display-4">
+              Our Services
+            </h2>
+            <div class="heading-line mb-4"></div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-6 border-right">
+              <h3 class="p-3">
+                Our services range from initial design to deployment anywhere anytime
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <p class="p-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque placeat commodi numquam itaque,
+                 veniam unde voluptas illo dolorem harum impedit animi facilis porro magni ad, quam temporibus repudiandae 
+                 suscipit reiciendis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="services-content col-md-6 mt-4">
+              <i class="fas fa-paper-plane"></i>
+              <h3 class="mt-1 text-start ">
+                Marketing
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto nemo iste velit aut doloremque quaerat 
+                atque beatae obcaecati placeat, ratione sunt ipsam laboriosam, accusamus quasi quos ipsa cumque corporis 
+                autem molestiae libero culpa ea. Ullam blanditiis veritatis ipsa amet odio.</p>
+                <button class="rounded-pill btn-round border-primary" type="button">
+                  Learn More
+                  <span><i class="fas fa-arrow-right"></i></span>
+                </button>
+            </div>
+            <div class="services-pic col-md-6 mt-4 text-start">
+              <img src="images/marketing.png" alt="marketing image">
+            </div>
+          </div>
+          <div class="row align-items-center flex-row-reverse">
+            <div class="services-content col-md-6 mt-4">
+              <i class="fas fa-code"></i>
+              <h3 class="mt-1 text-start ">
+                Web Development
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde assumenda veritatis explicabo
+                 ipsa sint nulla. Maiores iste, autem eaque facilis nesciunt asperiores incidunt sunt, fugit 
+                 sed labore et quis at blanditiis consequuntur iusto, laboriosam iure omnis! Labore iusto praesentium 
+                 consequatur aliquam numquam voluptate architecto qui fuga, ullam velit quidem consectetur!</p>
+                <button class="rounded-pill btn-round border-primary" type="button">
+                  Learn More
+                  <span><i class="fas fa-arrow-right"></i></span>
+                </button>
+            </div>
+            <div class="services-pic col-md-6 mt-4 text-start">
+              <img src="images/web_development.png" alt="marketing image">
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="services-content col-md-6 mt-4">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <h3 class="mt-1 text-start ">
+                Cloud Hosting
+              </h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nam sint magnam, 
+                voluptate ducimus laboriosam in iure corrupti odit quis quae dolore perferendis aliquam 
+                ratione ea consectetur accusantium necessitatibus! Magni eius facilis esse tempora, sapiente quae facere mollitia sed blanditiis aliquid iusto cumque et provident!</p>
+                <button class="rounded-pill btn-round border-primary" type="button">
+                  Learn More
+                  <span><i class="fas fa-arrow-right"></i></span>
+                </button>
+            </div>
+            <div class="services-pic col-md-6 mt-4 text-end">
+              <img src="images/cloud_hosting.png" alt="marketing image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials bg-gradient text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,106.7C384,128,480,160,576,197.3C672,235,768,277,864,256C960,235,1056,149,1152,112C1248,75,1344,85,1392,90.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container mt-3">
+          <div class="row">
+            <h2 class="display-4">
+              Testimonials
+            </h2>
+            <hr class="head-rule">
+            <p class="lead pt-1 text-center">
+              What our clients are saying
+            </p>
+          </div>
+
+          <!--Start The Carousel Content-->
+          <div class="row align-items-center">
+            <div id="carouselExampleCaptions" class="carousel slide" data-interval="false">
+        
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                 <div class="card">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus rerum, autem possimus ipsam 
+                    dolor. Blanditiis tenetur nihil sint iusto!</p>
+                    <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                 </div>
+                 <div class="client-pic">
+                   <img src="images/testimonials/client1_Brian_Smith.jpg" alt="client1" class="rounded-circle img-fluid">
+                 </div>
+                 <div class="client-name">
+                   <h3>Brian Smith</h3>
+                   <p class="text-center mb-4">Ceo and Founder</p>
+                 </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                   <i class="fas fa-quote-left"></i>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus rerum, autem possimus ipsam 
+                     dolor. Blanditiis tenetur nihil sint iusto!</p>
+                     <div class="ratings">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                     </div>
+                  </div>
+                  <div class="client-pic">
+                    <img src="images/testimonials/client2_Kamel_Nabil.jpg" alt="client2" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="client-name">
+                    <h3>Kamel Nabil</h3>
+                    <p class="text-center">Marketing Director</p>
+                  </div>
+                 </div>
+                 <div class="carousel-item">
+                  <div class="card">
+                   <i class="fas fa-quote-left"></i>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus rerum, autem possimus ipsam 
+                     dolor. Blanditiis tenetur nihil sint iusto!</p>
+                     <div class="ratings">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                     </div>
+                  </div>
+                  <div class="client-pic">
+                    <img src="images/testimonials/client3_Makiyah_Yeager.jpg" alt="client3" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="client-name">
+                    <h3>Makiyah Yeager</h3>
+                    <p class="text-center">Project Manager</p>
+                  </div>
+                 </div>
+                 <div class="carousel-item">
+                  <div class="card">
+                   <i class="fas fa-quote-left"></i>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus rerum, autem possimus ipsam 
+                     dolor. Blanditiis tenetur nihil sint iusto!</p>
+                     <div class="ratings">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                     </div>
+                  </div>
+                  <div class="client-pic">
+                    <img src="images/testimonials/client4_Mary_Woods.jpg" alt="client3" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="client-name">
+                    <h3>Mary Woods</h3>
+                    <p class="text-center">Civil Engineer</p>
+                  </div>
+                 </div>
+                 <div class="carousel-item">
+                  <div class="card">
+                   <i class="fas fa-quote-left"></i>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus rerum, autem possimus ipsam 
+                     dolor. Blanditiis tenetur nihil sint iusto!</p>
+                     <div class="ratings">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                     </div>
+                  </div>
+                  <div class="client-pic">
+                    <img src="images/testimonials/client5_Sidney_Ralak.jpg" alt="client3" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="client-name">
+                    <h3>Sidney Ralak</h3>
+                    <p class="text-center ">Industrial Engineer</p>
+                  </div>
+                 </div>
+              </div>
+              <!--Carousel Controls-->
+              <div class="text-center">
+              <button class="btn btn-outline-light" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span>
+                  <i class="fas fa-arrow-left"></i>
+                </span>
+              </button>
+              <button class="btn btn-outline-light" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L34.3,165.3C68.6,171,137,181,206,170.7C274.3,160,343,128,411,117.3C480,107,549,117,617,138.7C685.7,160,754,192,823,176C891.4,160,960,96,1029,80C1097.1,64,1166,96,1234,106.7C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+
+      </section>
+
+      <section class="faq" id="faq">
+        
+        <div class="container">
+          <div class="row">
+            <h2>FAQ</h2>
+            <div class="heading-line mb-4"></div>
+            <p class="lead">Get your question answered now.</p>
+          </div>
+
+          <!--Accordion FAQ Content-->
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="accordion" id="accordionExample">
+
+                <!--FAQ Question 1-->
+                <div class="accordion-item mb-3">
+                  <h3 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What are the main features?
+                    </button>
+                  </h3>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero provident earum perferendis, optio exercitationem dolorum beatae incidunt nam quidem 
+                        deserunt ipsam ducimus velit obcaecati eius itaque illum, non dolores aperiam voluptas minima. Id totam, labore voluptatem necessitatibus minima adipisci!
+                         Similique ab cupiditate deserunt, ipsum quasi eum nemo distinctio eligendi.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item  mb-3">
+                  <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Do I have to pay again after trial? 
+                    </button>
+                  </h3>
+                  <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit veniam autem libero atque. Laudantium doloremque recusandae minus, nesciunt voluptatum vitae quam sit, dignissimos voluptates totam aspernatur et iure qui debitis.</p>
+                    </div>
+                  </div>
+                </div> <div class="accordion-item  mb-3">
+                  <h3 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How can I get started after the trial period ends? 
+                    </button>
+                  </h3>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit velit ipsum voluptatum quas, similique earum ratione vitae nobis debitis optio non inventore odio blanditiis dolorum quam rerum aperiam doloremque? Nulla quas quisquam debitis repellat dolor. Voluptate, quasi, facilis alias odit quis error repellat veniam accusantium maxime iusto exercitationem! Deserunt eligendi unde vitae architecto cum ex, accusantium ullam aperiam maxime tempore?</p>
+                    </div>
+                  </div>
+                </div> <div class="accordion-item  mb-3">
+                  <h3 class="accordion-header" id="headingFour">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Can I be refunded if I am not satisfied
+                    </button>
+                  </h3>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, alias deserunt! Voluptates excepturi beatae libero.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<br>
+
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="row">
+            <h2>Latest Work</h2>
+            <div class="heading-line mb-4"></div>
+            <p class="lead">
+              Enjoy viewing the variety of projects that the WebDev Group has completed.
+            </p>
+          </div>
+
+          <!--FILTER BUTTONS-->
+          <div class="row text-center mt-2 mb-4 g-3">
+            <div class="col-md-12">
+              <button class="btn btn-outline-primary filter-button" type="button" data-filter="all">
+                All
+              </button>
+              <button class="btn btn-outline-primary filter-button" type="button" data-filter="websites">
+                Websites
+              </button> 
+              <button class="btn btn-outline-primary filter-button" type="button" data-filter="design">
+                Graphic Design
+              </button> 
+              <button class="btn btn-outline-primary filter-button" type="button" data-filter="media">
+                Multimedia
+              </button>
+            </div>
+          </div>
+
+          <!--START PORTFOLIO ITEMS-->
+          <div class="row">
+            <div class="column-lg-4 col-md-4 mx-auto my-3 filter websites">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio/web_dev/portfolio_1.jpg" alt="portfolio_img1" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Project Name</h4>
+                    <p>Project Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-lg-4 col-md-4 mx-auto my-3 filter websites">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio/web_dev/portfolio_2.jpg" alt="portfolio_img2" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Project Name</h4>
+                    <p>Project Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-lg-4 col-md-4 mx-auto my-3 filter websites">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio/web_dev/portfolio_3.jpg" alt="portfolio_img3" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Project Name</h4>
+                    <p>Project Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-lg-4 col-md-4 mx-auto my-3 filter websites">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio/web_dev/portfolio_4.jpg" alt="portfolio_img4" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Project Name</h4>
+                    <p>Project Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-lg-4 col-md-4 mx-auto my-3 filter websites">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio/web_dev/portfolio_5.jpg" alt="portfolio_img5" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Project Name</h4>
+                    <p>Project Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-lg-4 col-md-4 mx-auto my-3 filter design">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio/graphic_design/portfolio_6.jpg" alt="portfolio_img6" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Project Name</h4>
+                    <p>Project Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-lg-4 col-md-4 mx-auto my-3 filter design">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio/graphic_design/portfolio_7.jpg" alt="portfolio_img7" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Project Name</h4>
+                    <p>Project Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-lg-4 col-md-4 mx-auto my-3 filter design">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio/graphic_design/portfolio_8.jpg" alt="portfolio_img8" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Project Name</h4>
+                    <p>Project Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-lg-4 col-md-4 mx-auto my-3 filter design">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio/graphic_design/portfolio_9.jpg" alt="portfolio_img9" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Project Name</h4>
+                    <p>Project Category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      
+      <section id="contact" class="get-started py-3 bg-light">
+        <div class="container">
+          <div class="row">
+            <h2>Get Started</h2>
+            <div class="heading-line"></div>
+            <p class="lead">
+              Use the following form to contact the WebDev Group so we can get started on your next project
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6 bg-gradient shadow text-white p-3">
+              <div class="cta-info ">
+                <h1 class="display-3">
+                  100%
+                  <br>
+                  Satisfaction
+                  <br>
+                  Guaranteed
+                </h1>
+                <p class="lh-lg">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis expedita architecto delectus quam? Nemo ut iusto deleniti pariatur perferendis voluptate.
+                </p>
+                <h3 class="mb-3">
+                  What will be the next step?
+                </h3>
+
+                <ul>
+                  <li><i class="fas fa-check"> Prepare the proposal.</i></li>
+                  <li><i class="fas fa-check"> Discuss the proposal together.</i></li>
+                  <li><i class="fas fa-check"> Make changes to match your needs.</i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 bg-white shadow p-3">
+              <div class="start-form w-100 pb-2">
+                <h3>Start Your Project</h3>
+                <br>
+                <form action="#" method="POST" class="start">
+                  <div class="mb-3 text-dark">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" class="
+                    form-control shadow">
+                  </div>
+                  <div class="mb-3 text-dark">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" class="
+                    form-control shadow">
+                  </div>
+                  <div class="mb-3 text-dark">
+                    <input type="email" id="email" name="email" placeholder="Email" class="
+                    form-control shadow">
+                  </div>
+                  <div class="mb-3 text-dark">
+                    <textarea id="form-message" name="message" placeholder="Message" rows="8" class="
+                    form-control shadow"></textarea>
+                  </div>
+                  <div class="text-center mt-1">
+                    <button type="button" class="btn btn-primary rounded-pill py-3">Submit
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+  $(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+    
+    if(value == "all")
+    {
+        //$('.filter').removeClass('hidden');
+        $('.filter').show('1000');
+    }
+    else
+    {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');
+        
+    }
+});
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+    </script>
+</body>
+</html>
